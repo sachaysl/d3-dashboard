@@ -24,6 +24,8 @@
 	//generateMotif(400,200);
 	//generateMotif(247,200);
 	generateRow(247,200,3);
+	generateRow(323.5,243.8,3);
+	
 	function generateRow(startx, starty, number) {
 	    if (number != 0) {
                 generateMotif(startx, starty);
@@ -40,7 +42,7 @@
 	    .attr("points", calculatePolygonPoints(6,centerx, centery, 25)) //600,200
 	    .attr("fill", "none")
 	    .attr("stroke","black")
-	    .attr("stroke-width", "1")
+	    .attr("stroke-width", "0")
 	.style("fill", pentacleColour);
 
 	var tradius = 44;
