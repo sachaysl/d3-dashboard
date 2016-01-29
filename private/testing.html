@@ -21,8 +21,16 @@
 		.attr("width", width)
 	.attr("height", height);
 
-	generateMotif(400,200);
-	generateMotif(247,200);
+	//generateMotif(400,200);
+	//generateMotif(247,200);
+	generateRow(247,200,3);
+	function generateRow(startx, starty, number) {
+	    if (number != 0) {
+                generateMotif(startx, starty);
+	        generateRow(startx + 153, starty, number -1);
+	    }
+        }
+	
 	
 	function generateMotif(centerx,centery) {
 	
