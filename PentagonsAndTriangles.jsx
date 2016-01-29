@@ -17,7 +17,7 @@ PentagonsAndTriangles = React.createClass({
 	//first motif test
 
 	svg.append("svg:polygon")
-	    .attr("id", "pentagon1")
+	    .attr("id", "hexagon1")
 	    .attr("visibility", "visible")
 	    .attr("points", calculatePolygonPoints(6,200, 200, 25))
 //	    .attr("transform", " rotate(54," + 850/2.4 + "," + 600/2.4 + ") scale(0.4,0.4) translate(240,-45)")
