@@ -21,10 +21,38 @@
 		.attr("width", width)
 	.attr("height", height);
 
-	//generateMotif(400,200);
-	//generateMotif(247,200);
-	generateRow(247,200,3);
-	generateRow(323.5,243.8,3);
+        var startingy = 0;
+	var rh = 43.8;
+	var startingx = 47;
+	var staggeredx = startingx + 76.5;
+	var numberofHexagons = 8;
+	
+//	generateRow(staggeredx,startingy-rh,numberofHexagons);
+	generateRow(startingx,startingy,numberofHexagons);
+	generateRow(staggeredx,startingy + rh,numberofHexagons);
+	generateRow(startingx,startingy + (2*rh),numberofHexagons);
+	generateRow(staggeredx,startingy + (3*rh),numberofHexagons);
+	generateRow(startingx,startingy + (4*rh),numberofHexagons);
+	generateRow(staggeredx,startingy + (5*rh),numberofHexagons);
+	generateRow(startingx,startingy + (6*rh),numberofHexagons);
+	generateRow(staggeredx,startingy + (7*rh),numberofHexagons);
+	generateRow(startingx,startingy + (8*rh),numberofHexagons);
+	generateRow(staggeredx,startingy + (9*rh),numberofHexagons);
+	generateRow(startingx,startingy + (10*rh),numberofHexagons);
+	generateRow(staggeredx,startingy + (11*rh),numberofHexagons);
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
 	
 	function generateRow(startx, starty, number) {
 	    if (number != 0) {
