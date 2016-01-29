@@ -207,6 +207,103 @@ PentagonsAndTriangles = React.createClass({
 	    .attr("stroke-width", "1")
 	    .style("fill", decagonColour);
 
+		 // third motif test
+
+	svg.append("svg:polygon")
+	    .attr("id", "hexagon1")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(6,600, 200, 25))
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	    .attr("stroke-width", "1")
+	.style("fill", pentacleColour);
+
+	var tradius = 44;
+
+	var t1x = 174.8 + 400;
+	var t1y = 244;
+
+	svg.append("svg:polygon")
+	    .attr("id", "triangle1")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(3,t1x, t1y,tradius))
+	    .attr("transform", " rotate(30," + t1x + "," + t1y + ")")
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	.attr("stroke-width", "1")
+	.style("fill", decagonColour);
+
+	var t2x = 225.3 + 400;
+	var t2y = 243.5;
+	var t2rot = 210;
+	
+	svg.append("svg:polygon")
+	    .attr("id", "triangle2")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(3,t2x, t2y,tradius))
+	    .attr("transform", " rotate(" + t2rot + "," + t2x + "," + t2y + ")")
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	    .attr("stroke-width", "1")
+	.style("fill", decagonColour);
+
+	var t3x = 250.5 + 400;
+	var t3y = 199.5;
+	var t3rot = 30;
+	
+	svg.append("svg:polygon")
+	    .attr("id", "triangle3")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(3,t3x, t3y,tradius))
+	    .attr("transform", " rotate(" + t3rot + "," + t3x + "," + t3y + ")")
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	    .attr("stroke-width", "1")
+	.style("fill", decagonColour);
+
+	var t4x = 224.8 + 400;
+	var t4y = 156;
+	var t4rot = 210;
+	
+	svg.append("svg:polygon")
+	    .attr("id", "triangle4")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(3,t4x, t4y,tradius))
+	    .attr("transform", " rotate(" + t4rot + "," + t4x + "," + t4y + ")")
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	    .attr("stroke-width", "1")
+	.style("fill", decagonColour);
+
+	var t5x = 174.2 + 400;
+	var t5y = 156.5;
+	var t5rot = 30;
+	
+	svg.append("svg:polygon")
+	    .attr("id", "triangle5")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(3,t5x, t5y,tradius))
+	    .attr("transform", " rotate(" + t5rot + "," + t5x + "," + t5y + ")")
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	    .attr("stroke-width", "1")
+	.style("fill", decagonColour);
+
+	var t6x = 149 + 400;
+	var t6y = 200.5;
+	var t6rot = 210;
+	
+	svg.append("svg:polygon")
+	    .attr("id", "triangle6")
+	    .attr("visibility", "visible")
+	    .attr("points", calculatePolygonPoints(3,t6x, t6y,tradius))
+	    .attr("transform", " rotate(" + t6rot + "," + t6x + "," + t6y + ")")
+	    .attr("fill", "none")
+	    .attr("stroke","black")
+	    .attr("stroke-width", "1")
+	    .style("fill", decagonColour);
+
+
 
 
 	function calculatePolygonPoints(sides, centerX, centerY, radius) {
